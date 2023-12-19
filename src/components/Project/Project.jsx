@@ -19,7 +19,7 @@ export default function Project({ title, description, imageUrl, courseDocumentUr
         {/* Image */}
         <div className="w-full flex justify-center md:w-2/5 md:justify-start mb-6">
           <img
-          src={imageUrl}
+          src={process.env.PUBLIC_URL + imageUrl}
           alt="Project"
           className={`w-9/10 md:w-auto rounded-lg ${styles.customImage}`}
           style={{ maxWidth: '274px' }}
@@ -30,11 +30,11 @@ export default function Project({ title, description, imageUrl, courseDocumentUr
       {/* Label and Link */}
       <div className="flex items-center mt-4 ml-4">
         <span className="mr-2 font-semibold bg-courseLabelBGLight dark:bg-courseLabelBGDark text-courseLabelLight dark:text-courseLabelDark rounded px-2 py-0.5 uppercase">Course</span>
-        <a href={courseDocumentUrl} className="text-linkLight dark:text-linkDark" download>Course Link</a>
+        <a href={process.env.PUBLIC_URL + courseDocumentUrl} className="text-linkLight dark:text-linkDark" download>Course Link</a>
       </div>
       <div className="flex items-center mt-4 ml-4">
         <span className="mr-2 font-semibold bg-courseLabelBGLight dark:bg-courseLabelBGDark text-courseLabelLight dark:text-courseLabelDark rounded px-2 py-0.5 uppercase">Exercise</span>
-        <a href={exercisesDocumentUrl} className="text-linkLight dark:text-linkDark" download>Exercises Link</a>
+        <a href={process.env.PUBLIC_URL + exercisesDocumentUrl} className="text-linkLight dark:text-linkDark" download>Exercises Link</a>
       </div>
     </div>
   );
