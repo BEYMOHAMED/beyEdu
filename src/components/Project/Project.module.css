@@ -1,0 +1,14 @@
+.titleUnderline {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.customImage {
+  width: 100%;
+}
+
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+  .customImage {
+    width: auto; /* Width for desktop */
+  }
+}

@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import Header from './components/Header/Header';
+import Project from './components/Project/Project';
+
+import data from './data'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', darkMode);
+    document.body.classList.toggle('bg-light-background', !darkMode);
+    document.body.classList.toggle('bg-dark-background', darkMode);
+  }, [darkMode]);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`text-light-text dark:text-dark-text`}>
+      <Header toggleTheme={toggleTheme} darkMode={darkMode}  />
+      {data.map((data, index) => (
+        <Project
+          key={index}
+          title={data.title}
+          description={data.description}
+          imageUrl={data.imageUrl}
+          courseDocumentUrl={data.courseDocumentUrl}
+          exercisesDocumentUrl={data.exercisesDocumentUrl}
+        />
+      ))}
     </div>
   );
 }
