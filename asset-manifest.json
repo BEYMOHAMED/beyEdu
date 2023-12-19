@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/beyEdu/static/css/main.9bc32afa.css",
+    "main.js": "/beyEdu/static/js/main.8c41bcef.js",
+    "index.html": "/beyEdu/index.html",
+    "main.9bc32afa.css.map": "/beyEdu/static/css/main.9bc32afa.css.map",
+    "main.8c41bcef.js.map": "/beyEdu/static/js/main.8c41bcef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bc32afa.css",
+    "static/js/main.8c41bcef.js"
+  ]
+}
