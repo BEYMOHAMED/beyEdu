@@ -32,10 +32,12 @@ export default function Project({ title, description, imageUrl, courseDocumentUr
         <span className="mr-2 font-semibold bg-courseLabelBGLight dark:bg-courseLabelBGDark text-courseLabelLight dark:text-courseLabelDark rounded px-2 py-0.5 uppercase">Course</span>
         <a href={process.env.PUBLIC_URL + courseDocumentUrl} className="text-linkLight dark:text-linkDark" download>Course Link</a>
       </div>
-      <div className="flex items-center mt-4 ml-4">
-        <span className="mr-2 font-semibold bg-courseLabelBGLight dark:bg-courseLabelBGDark text-courseLabelLight dark:text-courseLabelDark rounded px-2 py-0.5 uppercase">Exercise</span>
-        <a href={process.env.PUBLIC_URL + exercisesDocumentUrl} className="text-linkLight dark:text-linkDark" download>Exercises Link</a>
-      </div>
+      {exercisesDocumentUrl && (
+        <div className="flex items-center mt-4 ml-4">
+          <span className="mr-2 font-semibold bg-courseLabelBGLight dark:bg-courseLabelBGDark text-courseLabelLight dark:text-courseLabelDark rounded px-2 py-0.5 uppercase">Exercise</span>
+          <a href={process.env.PUBLIC_URL + exercisesDocumentUrl} className="text-linkLight dark:text-linkDark" download>Exercises Link</a>
+        </div>
+      )}
     </div>
   );
 }

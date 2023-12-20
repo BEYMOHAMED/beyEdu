@@ -7,7 +7,7 @@ function Header({ toggleTheme, darkMode }) {
     <header className="bg-headerBGLight dark:bg-headerBGDark p-4 w-full mb-8">
       <div className="mx-auto flex justify-between items-center" style={{ maxWidth: '756px' }}>
         <div>
-          <img src="assets/images/logo.PNG" alt="Logo" className="h-8" />
+          <img src={process.env.PUBLIC_URL + `assets/images/logo.PNG`} alt="Logo" className="h-8" />
         </div>
         <div>
           <button onClick={toggleTheme} className="w-10 h-10 bg-buttonBgLight hover:bg-buttonBgHoverLight dark:bg-buttonBgDark dark:hover:bg-buttonBgHoverDark rounded-lg flex justify-center items-center transition ease-in-out duration-300">
