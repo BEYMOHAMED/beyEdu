@@ -20,6 +20,7 @@ const educationData = [
       "Ce cours vous initie au CSS, un outil essentiel pour le design web. Vous découvrirez comment utiliser le CSS pour styliser et organiser le contenu des pages web. Le cours couvre les sélecteurs, la syntaxe, le modèle de boîte, et bien plus. Parfait pour ceux qui souhaitent apprendre à créer des sites web visuellement attrayants et fonctionnels.",
     imageUrl: "/assets/images/css.png",
     courseDocumentUrl: "/assets/documents/courses/Introduction-au-CSS.pptx",
+    exercisesDocumentUrl: "/assets/documents/exercises/Exercice-CSS.pptx",
 
   },
 ];
