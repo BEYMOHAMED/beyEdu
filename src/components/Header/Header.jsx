@@ -11,7 +11,8 @@ function Header({ toggleTheme, darkMode }) {
         </div>
         <div>
           <button onClick={toggleTheme} className="w-10 h-10 bg-buttonBgLight hover:bg-buttonBgHoverLight dark:bg-buttonBgDark dark:hover:bg-buttonBgHoverDark rounded-lg flex justify-center items-center transition ease-in-out duration-300">
-            <img src={darkMode ? "/assets/icons/sun.svg" : "/assets/icons/moon.svg"} alt="Theme Icon" className="h-6" />
+            <img src={process.env.PUBLIC_URL + (darkMode ? "/assets/icons/sun.svg" : "/assets/icons/moon.svg")} alt="Theme Icon" className="h-6" />
+
           </button>
         </div>
       </div>
