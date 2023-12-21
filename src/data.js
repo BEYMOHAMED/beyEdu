@@ -23,6 +23,15 @@ const educationData = [
     exercisesDocumentUrl: "/assets/documents/exercises/Exercice-CSS.pptx",
 
   },
+  {
+    title: "Flex Box",
+    description:
+      "Ce cours se concentre sur Flexbox, une technique incontournable pour la mise en page en CSS. Vous apprendrez à maîtriser Flexbox pour créer des interfaces web réactives et élégantes. Le cours explore comment Flexbox simplifie l'alignement, la distribution et la disposition des éléments dans un conteneur. Idéal pour ceux qui veulent approfondir leurs compétences en CSS et concevoir des sites web modernes et adaptatifs.",
+    imageUrl: "/assets/images/flex-box.png",
+    courseDocumentUrl: "/assets/documents/courses/Flexbox.pptx",
+    exercisesDocumentUrl: "/assets/documents/exercises/Exercice-Flex.pptx",
+
+  },
 ];
 
 export default educationData;
