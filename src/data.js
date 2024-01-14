@@ -21,7 +21,6 @@ const educationData = [
     imageUrl: "/assets/images/css.png",
     courseDocumentUrl: "/assets/documents/courses/Introduction-au-CSS.pptx",
     exercisesDocumentUrl: "/assets/documents/exercises/Exercice-CSS.pptx",
-
   },
   {
     title: "Flex Box",
@@ -30,7 +29,23 @@ const educationData = [
     imageUrl: "/assets/images/flex-box.png",
     courseDocumentUrl: "/assets/documents/courses/Flexbox.pptx",
     exercisesDocumentUrl: "/assets/documents/exercises/Exercice-Flex.pptx",
-
+  },
+  {
+    title: "Media Queries",
+    description:
+      "Découvrez les media queries en CSS, essentiels pour créer des sites web adaptatifs. Ce cours vous initiera à la modification de la mise en page selon la taille de l'écran, idéal pour une conception web flexible et réactive.",
+    imageUrl: "/assets/images/meda-queries.png",
+    courseDocumentUrl:
+      "/assets/documents/courses/Introduction-aux-Media-Queries.pptx",
+    exercisesDocumentUrl:
+      "/assets/documents/exercises/Exercices-Media-Query.pptx",
+  },
+  {
+    title: "Cheat Sheet",
+    description:
+      "Un guide rapide et pratique regroupant les propriétés et sélecteurs clés. Parfait pour référence rapide ou pour renforcer vos connaissances en CSS, elle vous aidera à styliser efficacement vos pages web.",
+    imageUrl: "/assets/images/cheat-sheet.png",
+    courseDocumentUrl: "/assets/documents/courses/cheat-sheet.pdf",
   },
 ];
 
