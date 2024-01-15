@@ -47,6 +47,13 @@ const educationData = [
     imageUrl: "/assets/images/cheat-sheet.png",
     courseDocumentUrl: "/assets/documents/courses/cheat-sheet.pdf",
   },
+  {
+    title: "Final Project",
+    description:
+      "Utiliser les compétences acquises en HTML et CSS pour créer un site web complet et responsive sur un thème de votre choix.",
+    imageUrl: "/assets/images/final-project.png",
+    courseDocumentUrl: "/assets/documents/courses/final-project.pdf",
+  },
 ];
 
 export default educationData;
