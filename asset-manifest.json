@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/beyEdu/static/css/main.9bc32afa.css",
-    "main.js": "/beyEdu/static/js/main.556b9383.js",
+    "main.js": "/beyEdu/static/js/main.4eacfaa8.js",
     "index.html": "/beyEdu/index.html",
     "main.9bc32afa.css.map": "/beyEdu/static/css/main.9bc32afa.css.map",
-    "main.556b9383.js.map": "/beyEdu/static/js/main.556b9383.js.map"
+    "main.4eacfaa8.js.map": "/beyEdu/static/js/main.4eacfaa8.js.map"
   },
   "entrypoints": [
     "static/css/main.9bc32afa.css",
-    "static/js/main.556b9383.js"
+    "static/js/main.4eacfaa8.js"
   ]
 }
